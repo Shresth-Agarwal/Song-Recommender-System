@@ -85,7 +85,7 @@ Run all cells sequentially to train and use the recommendation logic.
 
 Once you’ve executed the notebook cells, call the `recommender` function like this:
 ```
-python recommender("Shape of You")
+python recommender("Radio")
 ```
 ---
 
