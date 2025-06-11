@@ -123,5 +123,5 @@ This project is licensed under the MIT License. See `LICENSE.txt` for details.
 ---
 
 📸 Demo Preview
-![Screenshot of the Streamlit app interface](images\text.jpg)
-![Screenshot of the Streamlit app interface](images\feature.jpg)
+![Text-Based](images\text.jpg)
+![Feature-Based](images\feature.jpg)
