@@ -5,8 +5,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import pandas as pd
 import numpy as np
 
-CLIENT_ID = "93a58c1ed1bb41a994047c945e25bde5" 
-CLIENT_SECRET = "8307285c3ce24d9ba8b8ac1677dc2f9b" 
+CLIENT_ID = "Client_id" 
+CLIENT_SECRET = "Client_Secret" 
 
 @st.cache_resource
 def load_all_data_and_models():
