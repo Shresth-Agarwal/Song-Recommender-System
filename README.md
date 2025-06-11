@@ -1,83 +1,126 @@
-# Song Recommendation System
+# 🎧 Song Recommender System
 
-## Project Description
+This project builds a **hybrid song recommender system** that suggests tracks based on either **lyrics** (text-based) or **audio features** (feature-based). It uses NLP and machine learning techniques to personalize recommendations.
 
-This project aims to build a song recommendation system that suggests songs to users based on their preferences. The system utilizes machine learning techniques, potentially incorporating natural language processing (NLP), to analyze song data and user behavior to provide personalized recommendations.
+A simple, interactive **Streamlit UI** allows users to input a song and instantly see recommendations.
 
-The system employs two main approaches:
+---
 
-1.  **Text-Based Recommendation:** This approach analyzes the lyrical content of songs using TF-IDF vectorization and Nearest Neighbors to find similar songs.
-2.  **Feature-Based Recommendation:** This approach uses numerical features of songs (like danceability, energy, streams, etc.) and Nearest Neighbors to find songs with similar audio characteristics and popularity.
+## 🧠 Recommendation Approaches
 
-The system attempts text-based recommendations first and falls back to feature-based recommendations if a song is not found in the text-based dataset.
+1. **🎵 Text-Based Recommendations**  
+   - Uses **TF-IDF vectorization** on song lyrics.
+   - Computes **cosine similarity** via **K-Nearest Neighbors** to find lyrically similar tracks.
+   - Based on the **Spotify Million Playlist Dataset**.
 
-The project also includes a user-friendly web interface built with Streamlit.
+2. **📊 Feature-Based Recommendations**  
+   - Uses features like `danceability`, `energy`, `acousticness`, `tempo`, `popularity`, etc.
+   - Applies **StandardScaler** + **KNN** on numerical values.
+   - Based on a dataset of **popular streaming songs**.
 
-## Getting Started
+> If a song is not found in the lyrics dataset, the system defaults to the feature-based model.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. You can also run the core recommendation logic in Google Colab and potentially connect it to a deployed Streamlit app, or run both components locally.
+---
 
-### Prerequisites
+## 🖥️ Tech Stack
 
-To run this project locally, you will need:
+- Python 🐍
+- Scikit-learn
+- NLTK (for text preprocessing)
+- Pandas, NumPy
+- Streamlit 🌐 (Frontend)
 
-*   Python 3.6 or higher
-*   Jupyter Notebook or a Python environment that can run `.ipynb` files (for the notebook).
-*   Streamlit (for the frontend).
-*   Required Python libraries (listed in the `requirements.txt` section).
+---
 
-### Installing
+## 🚀 Getting Started
 
-1.  Clone the repository:
-   ` git clone  `
-2.  Navigate to the project directory:
-   `cd song-recommendation-system`
-3.  Install the required libraries. It's recommended to use a virtual environment:
-   `pip install -r requirements.txt `
+### ✅ Prerequisites
+- Python 3.6+
+- `streamlit`, `scikit-learn`, `pandas`, `nltk`, etc.
+- Datasets: `songdata.csv`, `popular_songs.csv`
 
-### Running the Streamlit Frontend
+### 📦 Installation
 
-1.  Make sure you have the necessary datasets (`songdata.csv` and `popular_songs.csv`) in the same directory as your Streamlit application file (e.g., `app.py`).
-2.  Run the Streamlit application from your terminal:
-   `streamlit run app.py`
-3.  (Replace `app.py` with the actual name of your Streamlit file).
-3.  Your web browser should open with the Streamlit application.
+```
+# Clone the repository
+git clone https://github.com/Shresth-Agarwal/Song-Recommender-System.git
+cd Song-Recommender-System
+```
+# Install dependencies
+``` pip install -r requirements.txt```
+### 💡 Run the Streamlit App
 
-### Running the Notebook in Google Colab
+```
+streamlit run app.py
+```
+✅ Make sure the following files are in the same directory as `app.py`:
 
-1.  Open the `Song_Recommendation_System.ipynb` notebook in Google Colab.
-2.  Make sure you have the necessary datasets (`songdata.csv` and `popular_songs.csv`) uploaded to your Colab environment or connected from Google Drive. The notebook includes cells for uploading files.
-3.  Run the cells sequentially to train the models.
+*   `songdata.csv`
+*   `popular_songs.csv`
 
-## Usage
+Once the app launches, it will open automatically in your web browser. You can enter a song title to receive music recommendations.
 
-### Using the Streamlit Frontend
+---
 
-Open the Streamlit application in your web browser. You should see an interface where you can input a song title to get recommendations.
+📓 Running on Google Colab
 
-### Using the Core Recommendation Logic (in the Notebook)
+Open `Song_Recommendation_System.ipynb` in Google Colab.
 
-Once the notebook is running, you can use the `recommender()` function in a code cell to get song recommendations.
-   `recommender(song_title)`
-Replace `"Song Title"` with the name of the song you want recommendations for. The system will output recommendations based on either the text-based or feature-based model.
+Upload the required datasets or mount Google Drive.
 
-## Datasets
+Run all cells sequentially to train and use the recommendation logic.
 
-This project uses the following datasets:
+---
 
-*   `songdata.csv`: Contains song lyrics and metadata for text-based recommendations.
-*   `popular_songs.csv`: Contains popular song data with various audio features and streaming information for feature-based recommendations.
+🧪 Usage
 
-Make sure these files are accessible in the environment where you are running the notebook and/or the Streamlit application.
+🖱️ Using the Web App
 
-## Contributing
+1.  Enter a song title in the text box.
+2.  View similar song suggestions generated by either:
+    *   🎵 Lyrics-based similarity, or
+    *   📊 Audio feature similarity (fallback).
 
-Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
+🧑‍💻 Using the Notebook
 
-## License
+Once you’ve executed the notebook cells, call the `recommender` function like this:
+```
+python recommender("Shape of You")
+```
+---
 
-This project is licensed under the MIT License - see the LICENSE.txt file for details. (If you have a LICENSE.txt file)
+📂 Datasets Used
 
-## Acknowledgments
+*   `songdata.csv`: Contains song lyrics and metadata.
+*   `popular_songs.csv`: Includes features like danceability, energy, tempo, and popularity.
 
-*   Mention any datasets, libraries, or resources that were particularly helpful.
+---
+
+🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+*   Open an issue
+*   Suggest new features
+*   Submit a pull request 🚀
+
+---
+
+📜 License
+
+This project is licensed under the MIT License. See `LICENSE.txt` for details.
+
+---
+
+🙏 Acknowledgments
+
+*   Million Song Dataset
+*   Spotify API Feature Documentation
+*   NLTK
+*   Streamlit
+*   IIIT-Hyderabad AIML course for foundational concepts 🙌
+
+---
+
+📸 Demo Preview
+
