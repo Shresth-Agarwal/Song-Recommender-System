@@ -123,5 +123,5 @@ This project is licensed under the MIT License. See `LICENSE.txt` for details.
 ---
 
 📸 Demo Preview
-![Text-Based](images\text.jpg)
-![Feature-Based](images\feature.jpg)
+![Text-Based](images/text.jpg)
+![Feature-Based](images/feature.jpg)
