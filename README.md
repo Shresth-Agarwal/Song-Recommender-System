@@ -123,4 +123,4 @@ This project is licensed under the MIT License. See `LICENSE.txt` for details.
 ---
 
 📸 Demo Preview
-
+![Screenshot of the Streamlit app interface](C:\Users\Shresth Agarwal\OneDrive\Documents\Project\Machine Learning\images\text.jpg)
