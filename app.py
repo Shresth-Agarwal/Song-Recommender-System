@@ -4,12 +4,9 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import pandas as pd
 import numpy as np
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
-CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID")
-CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
+CLIENT_ID = "SPOTIPY_CLIENT_ID"
+CLIENT_SECRET = "SPOTIPY_CLIENT_SECRET"
 
 @st.cache_resource
 def load_all_data_and_models():
