@@ -6,6 +6,16 @@ A simple, interactive **Streamlit UI** allows users to input a song and instantl
 
 ---
 
+## 🚀 Live Demo
+
+Check out the live, fully-deployed version of the app here:
+
+➡️ **[Live Song Recommender on Render](https://song-recommender-system-xc39.onrender.com/)**
+
+Try entering your favorite song—get instant, smart recommendations with real album covers!
+
+---
+
 ## 🧠 Recommendation Approaches
 
 1. **🎵 Text-Based Recommendations**  
