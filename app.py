@@ -4,10 +4,12 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import pandas as pd
 import numpy as np
+import os
 
 CLIENT_ID = "SPOTIPY_CLIENT_ID"
 CLIENT_SECRET = "SPOTIPY_CLIENT_SECRET"
 
+port = int(os.environ.get("PORT", 8501))
 @st.cache_resource
 def load_all_data_and_models():
     data = {}
