@@ -35,7 +35,7 @@ A simple, interactive **Streamlit UI** allows users to input a song and instantl
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
-- Python 3.6+
+- Python 3.9+
 - `streamlit`, `scikit-learn`, `pandas`, `nltk`, etc.
 - Datasets: `songdata.csv`, `popular_songs.csv`
 
