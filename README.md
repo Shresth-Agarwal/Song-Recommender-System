@@ -57,7 +57,7 @@ git clone https://github.com/Shresth-Agarwal/Song-Recommender-System.git
 cd Song-Recommender-System
 ```
 # Install dependencies
-``` pip install -r requirements.txt```
+``` pip install -r Requirements.txt```
 ### 💡 Run the Streamlit App
 
 ```
