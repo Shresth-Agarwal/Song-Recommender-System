@@ -1,6 +1,7 @@
+--prefer-binary
+
 streamlit==1.33.0
 spotipy==2.23.0
---prefer-binary
 pandas==2.2.1
 numpy==1.26.4
 scikit-learn==1.4.2
